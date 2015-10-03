@@ -1,5 +1,7 @@
 Application: nodeJSChat
+
 Author: Micah Stamper
+
 Profile: https://github.com/mstamper01/
 
 Description: This project is a simple web chat application. It exchanges messages between webpages from the webserver.
