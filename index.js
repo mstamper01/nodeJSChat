@@ -7,15 +7,8 @@ app.get('/', function(req, res){
 });
 
 io.on('connection', function(socket){
-	console.log('a user connected!');
-	socket.on('disconnect', function(){
-		console.log('user disconnect');
-	});
-});
-
-io.on('connection', function(socket){
 	socket.on('chat message', function(msg){
-		consolge.log('message: ' + msg);
+		 io.emit('chat message', msg);
 	});
 });
 
